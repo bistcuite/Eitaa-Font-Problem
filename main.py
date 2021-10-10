@@ -8,7 +8,7 @@ if __name__ == "__main__" :
         pass
     elif len(argv) == 2 :
         if not isdir("~/.local/share/fonts"):
-            os.mkdir("~/.local/share/fonts") 
+            os.mkdir("~/.local/share/fonts") # or : os.makedirs("~/.local/share/fonts")
         shutil.move(argv[1],"~/.local/share/fonts")
         font_name = argv[1].split(".")[0]
         file = open("~/.local/share/EitaaDesktop/edata/fc-custom-1.conf","w")
