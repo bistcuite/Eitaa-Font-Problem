@@ -11,7 +11,6 @@ if __name__ == "__main__" :
             os.mkdir("~/.local/share/fonts") # or : os.makedirs("~/.local/share/fonts")
         shutil.move(argv[1],"~/.local/share/fonts")
         font_name = argv[1].split(".")[0]
-        file = open("~/.local/share/EitaaDesktop/edata/fc-custom-1.conf","w")
         content = f"""<?xml version='1.0'?>
         <!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
         <fontconfig>
@@ -27,5 +26,5 @@ if __name__ == "__main__" :
 
         </fontconfig>
         """
-        file.write(content)
-        file.close()
+        with open("~/.local/share/EitaaDesktop/edata/fc-custom-1.conf","w") as file:
+            file.write(content)
