@@ -1,4 +1,4 @@
-# Fix Eitaa's Font Problem on Linux
+# Fix [Eitaa's](https://eitaa.com) Font Problem on Linux
 - Make sure eitaa is not open
 - Clone this repo :
 ```
